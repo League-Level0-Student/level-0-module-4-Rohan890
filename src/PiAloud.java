@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class PiAloud {
+public static void main(String[] args) {
+	
 
 	// 1. Make a main method and make sure your program can run
 
@@ -22,6 +24,7 @@ public class PiAloud {
 	// *7. Compare the users' char to the next digit of Pi
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
 
+}
 	static void speak(char characterToSpeak) {
 		try {
 			Runtime.getRuntime().exec("say " + characterToSpeak).waitFor();
@@ -45,5 +48,6 @@ public class PiAloud {
 	}
 
 }
+
 
 
